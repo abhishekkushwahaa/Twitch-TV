@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Twitch TV
 
-## Getting Started
+This project is Twitch clone. It is a FullStack web application that allows users to view a list of streamers and their status. The application also allows users to search for streamers and view their status.
 
-First, run the development server:
+> Note: In this project, We build everything from scratch to advanced. Whatever we need for this project.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Technologies
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Next.js
+- MongoDB
+- PostgreSQL
+- Prisma
+- React.js
+- Tailwind Css
+- Shadcn UI
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Key Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Live Streaming and Uploading Video
+- Channels & Communities
+- Chat Interaction(Comments Section)
+- Search Streamers and Channels
+- Authentication
+- Live Viewer Count & Live Status
+- Follow and Unfollow system
+- Slow Chat mode,Followers only chat.
+- Store users information in DB
 
-## Learn More
+## Installation
 
-To learn more about Next.js, take a look at the following resources:
+Make sure you have the following installed on your machine:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Node.js](https://nodejs.org/) (Node version 18.17 or later)
+- [npm](https://www.npmjs.com/) (Node Package Manager)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+  ```bash
+  git clone https://github.com/abhishekkushwaha/twitch-tv.git
+  cd twitch-tv
+  npm install
 
-## Deploy on Vercel
+  npm run dev: Runs the development server.
+  npm run build: Builds the app for production.
+  npm start: Starts the production server.
+  ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Feedback and Suggestions
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+We value your feedback and suggestions for improving this repository. If you have any ideas for new challenges or improvements, or if you find any issues, please open an [issue](https://github.com/abhishekkushwahaa/twitch-tv/issues) or create a [pull request](https://github.com/abhishekkushwahaa/twitch-tv/pulls).
+
+Happy coding and have fun solving the challenges!
+
+## Connect with us :gift_heart:
+
+Stay updated with the latest coding challenges, tips, and more by following us on our social media channels. Join our community to engage with fellow developers and learn together.
