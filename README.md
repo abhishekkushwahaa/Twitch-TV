@@ -1,4 +1,4 @@
-# Twitch TV
+# Twitch TV 📺
 
 This project is Twitch clone. It is a FullStack web application that allows users to view a list of streamers and their status. The application also allows users to search for streamers and view their status.
 
@@ -39,7 +39,7 @@ Make sure you have the following installed on your machine:
 - [npm](https://www.npmjs.com/) (Node Package Manager)
 
   ```bash
-  git clone https://github.com/abhishekkushwaha/twitch-tv.git
+  git clone https://github.com/abhishekkushwahaa/twitch-tv.git
   cd twitch-tv
   npm install
 
