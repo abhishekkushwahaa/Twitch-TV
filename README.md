@@ -13,7 +13,7 @@ This project is Twitch clone. It is a FullStack web application that allows user
 - React.js
 - Stripe
 - Tailwind Css
-- Shadcn UI
+- Shadcn UI (For UI Components)
 - WebRTC (For Video Streaming)
 - WebSockets (For Realtime Communication)
 - Livekit (For Live Streaming)
