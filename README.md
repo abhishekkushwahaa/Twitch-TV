@@ -11,8 +11,12 @@ This project is Twitch clone. It is a FullStack web application that allows user
 - PostgreSQL
 - Prisma
 - React.js
+- Stripe
 - Tailwind Css
 - Shadcn UI
+- WebRTC (For Video Streaming)
+- WebSockets (For Realtime Communication)
+- Livekit (For Live Streaming)
 
 ## Key Features
 
@@ -25,6 +29,7 @@ This project is Twitch clone. It is a FullStack web application that allows user
 - Follow and Unfollow system
 - Slow Chat mode,Followers only chat.
 - Store users information in DB
+- Subscription and Payment System
 
 ## Installation
 
