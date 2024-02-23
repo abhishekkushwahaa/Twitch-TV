@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
-import { Inter, Instrument_Sans } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-
-const inter = Inter({ subsets: ["latin"] });
-const instrument_sans = Instrument_Sans({ subsets: ["latin"] });
+import { instrument_sans } from "./utils/fonts";
 
 export const metadata: Metadata = {
   title: "Twitch TV",
@@ -21,8 +18,11 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className={instrument_sans.className}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+      <body
+        className={instrument_sans.className}
+        suppressHydrationWarning={true}
+      >
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           {children}
         </ThemeProvider>
       </body>

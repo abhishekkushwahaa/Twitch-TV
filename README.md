@@ -8,7 +8,7 @@ This project is Twitch clone. It is a FullStack web application that allows user
 
 - Next.js
 - MongoDB
-- PostgreSQL
+- PostgreSQL(Supabase)
 - Prisma
 - React.js
 - Stripe
