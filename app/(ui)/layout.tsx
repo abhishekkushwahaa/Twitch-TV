@@ -1,3 +1,4 @@
+import { Container } from "./_components/container";
 import { Navbar } from "./_components/navbar";
 import { Sidebar } from "./_components/sidebar";
 
@@ -16,7 +17,7 @@ export default function UiLayout({
 
         <div className="flex h-full pt-12 mt-0.5">
           <Sidebar />
-          {children}
+          <Container>{children}</Container>
         </div>
       </body>
     </html>

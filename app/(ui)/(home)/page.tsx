@@ -7,8 +7,12 @@ export default async function Home() {
   if (!session) {
     redirect("/login");
   }
-  return <h1 className="text-2xl text-yellow-600 font-medium"></h1>;
+  return (
+    <h1 className="text-2xl text-yellow-600 font-medium">
+      Hello from Home Page
+    </h1>
+  );
   {
-    session ? <h1>Home Page</h1> : <h1>Heehhee</h1>;
+    session ? <h1>Home Page</h1> : <h1>HaHa</h1>;
   }
 }
