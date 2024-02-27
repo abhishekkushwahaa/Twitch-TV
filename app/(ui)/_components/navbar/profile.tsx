@@ -7,8 +7,13 @@ import {
   Avatar,
 } from "@nextui-org/react";
 import { signOut } from "next-auth/react";
+import { User } from "@prisma/client";
 
-export default function Profile() {
+interface ProfileProps {
+  data: User;
+}
+
+export default function Profile({ data }: ProfileProps) {
   return (
     <div className="flex items-center">
       <Dropdown placement="bottom-end">
@@ -17,7 +22,7 @@ export default function Profile() {
             isBordered
             as="button"
             className="transition-transform"
-            src={"https://www.svgrepo.com/show/113445/avatar.svg" as string}
+            src={data && data.image ? data.image : ""}
             alt="Avatar"
             size="sm"
           />

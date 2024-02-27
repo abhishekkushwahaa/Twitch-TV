@@ -1,6 +1,7 @@
+import { Suspense } from "react";
 import { Container } from "./_components/container";
 import { Navbar } from "./_components/navbar";
-import { Sidebar } from "./_components/sidebar";
+import { Sidebar, SidebarSkeleton } from "./_components/sidebar";
 
 export default function UiLayout({
   children,
@@ -16,7 +17,9 @@ export default function UiLayout({
         <Navbar />
 
         <div className="flex h-full pt-12 mt-0.5">
-          <Sidebar />
+          <Suspense fallback={<SidebarSkeleton />}>
+            <Sidebar />
+          </Suspense>
           <Container>{children}</Container>
         </div>
       </body>

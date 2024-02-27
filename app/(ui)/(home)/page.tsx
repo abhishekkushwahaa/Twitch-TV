@@ -12,7 +12,4 @@ export default async function Home() {
       Hello from Home Page
     </h1>
   );
-  {
-    session ? <h1>Home Page</h1> : <h1>HaHa</h1>;
-  }
 }
