@@ -1,13 +1,23 @@
 "use client";
 import { cn } from "@/lib/utils";
 import { useSidebar } from "@/store/toggleSidebar";
+import { useState, useEffect } from "react";
 
 interface WrapperProps {
   children: React.ReactNode;
 }
 
 const Wrapper = ({ children }: WrapperProps) => {
+  const [isClient, setIsClient] = useState(false);
   const { collapsed } = useSidebar((state) => state);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) {
+    return null;
+  }
 
   return (
     <aside
