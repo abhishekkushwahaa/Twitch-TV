@@ -9,11 +9,7 @@ import {
 import { signOut } from "next-auth/react";
 import { User } from "@prisma/client";
 
-interface ProfileProps {
-  data: User;
-}
-
-export default function Profile({ data }: ProfileProps) {
+export default function Profile() {
   return (
     <div className="flex items-center">
       <Dropdown placement="bottom-end">
@@ -22,7 +18,7 @@ export default function Profile({ data }: ProfileProps) {
             isBordered
             as="button"
             className="transition-transform"
-            src={data && data.image ? data.image : ""}
+            src=""
             alt="Avatar"
             size="sm"
           />
