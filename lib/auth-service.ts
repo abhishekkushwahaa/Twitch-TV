@@ -1,8 +1,8 @@
 import db from "../app/utils/db";
 
-export const getSelf = async (name: string, email: string) => {
-  const user = await db.user.findUnique({
-    where: { name: name, email: email },
+export const getSelf = async (id: string, email: string) => {
+  const user = await db.user.findMany({
+    where: { id: id, email: email },
   });
 
   if (!user) {
