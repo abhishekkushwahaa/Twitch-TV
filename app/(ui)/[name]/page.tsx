@@ -18,7 +18,7 @@ const UserPage = async ({ params }: UserPageProps) => {
     notFound();
   }
 
-  const isFollowing = await followingUser(user.id);
+  const isFollowing = await followingUser(user[0].id, user[0].email ?? "");
 
   return (
     <div className="flex flex-col gap-y-4">
@@ -26,7 +26,7 @@ const UserPage = async ({ params }: UserPageProps) => {
       <p>Email: {user[0]?.email}</p>
       <p>ID: {user[0]?.id}</p>
       <p>Following: {`${isFollowing}`}</p>
-      <Actions />
+      <Actions userID={user[0].id} isFollowing={isFollowing} />
     </div>
   );
 };

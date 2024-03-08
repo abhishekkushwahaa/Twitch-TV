@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { instrument_sans } from "./utils/fonts";
+import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
   title: "Twitch TV",
@@ -22,6 +23,7 @@ export default function RootLayout({
         className={instrument_sans.className}
         suppressHydrationWarning={true}
       >
+        <Toaster theme="light" position="bottom-right" />
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           {children}
         </ThemeProvider>
