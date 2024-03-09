@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { TicketPlus, Inbox, BellDot } from "lucide-react";
+import { TicketPlus, Inbox, BellDot, Tv } from "lucide-react";
 import Profile from "./profile";
+import Link from "next/link";
 
 const Action = () => {
   return (

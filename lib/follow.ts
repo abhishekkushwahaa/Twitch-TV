@@ -7,7 +7,7 @@ export async function followingUser(id: string, email: string) {
     where: { id, email },
   });
 
-  if (!otherUser[0]) {
+  if (!otherUser) {
     throw new Error("User not found");
   }
 
@@ -17,11 +17,11 @@ export async function followingUser(id: string, email: string) {
 
   const existingFollow = await db.follow.findFirst({
     where: {
-      followerId: self[0].id,
-      followingId: otherUser[0].id,
+      followerId: self.id,
+      followingId: otherUser.id,
     },
   });
-  return false;
+  return existingFollow ? true : false;
 }
 
 export const followUser = async (id: string, email: string) => {
